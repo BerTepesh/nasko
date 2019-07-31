@@ -714,14 +714,14 @@ textarea {
   background-position: center center;
   background-size: cover;
   min-height: 400px;
-  padding-top: 170px;
+  padding-top: 151px;
   margin-bottom: 40px; }
   @media (min-width: 576px) {
     .preface {
       height: 400px; } }
   .preface_slide {
     height: auto;
-    padding-top: 0;
+    //padding-top: 0;
     margin-bottom: 0; }
   .preface__item {
     height: 800px;
