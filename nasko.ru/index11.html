@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <meta content='true' name='HandheldFriendly' />
+  <meta content='width' name='MobileOptimized' />
+  <meta content='yes' name='apple-mobile-web-app-capable' />
+  <title>Nasko</title>
+  <link rel="stylesheet" href="f/css/bootstrap.min.css">
+  <link rel="stylesheet" href="f/css/sidr.light.min.css">
+  <link href="f/slick/slick.css" type="text/css" rel="stylesheet">
+  <link rel="stylesheet" href="f/css/speedometer.css">
+  <link rel="stylesheet" href="f/css/datepicker.min.css">
+  <link rel="stylesheet" href="f/css/ion.rangeSlider.skinHTML5.css">
+  <link rel="stylesheet" href="f/css/ion.rangeSlider.css">
+  <link rel="stylesheet" href="f/css/main.css">
+</head>
+<body>
+  <div id="sidr">
+    <a href="#" id="ham-menu-close" class="ham-trigger ham-trigger_close"></a>
+    <form action="" class="ham-search">
+      <input type="text" placeholder="Поиск">
+    </form>
+    <div class="citypick citypick_ham">
+      <span class="icon-marker mr-1"></span>
+      <span>Ваш город:</span>
+      <a href="#" data-toggle="modal" data-target="#city-modal">Москва</a>
+      <!--<select class="selectpicker" title="Москва">
+        <option>Москва2</option>
+        <option>Москва3</option>
+      </select>-->
+    </div>
+    <div class="nav">
+      <ul>
+        <li><a href="#">Частным клиентам</a></li>
+        <li><a href="#">Корпоративным клиентам</a></li>
+        <li><a href="#">О компании</a></li>
+        <li><a href="#">Контакты</a></li>
+        <li><a href="#">Онлайн сервисы НАСКО</a></li>
+      </ul>
+    </div>
+  </div>
+  <ul class="side-control">
+    <li><a href="#"><span class="icon-faq2"></span></a></li>
+    <li><a href="#"><span class="icon-enshure2"></span></a></li>
+    <li><a href="#" class="scroll-control"><span class="icon-arrow-down"></span></a></li>
+  </ul>
+  <div class="wrap">
+    <header class="header">
+      <div class="container">
+        <div class="header__top">
+          <div class="row justify-content-center justify-content-sm-between align-items-center">
+            <div class="col-12 text-center col-sm-auto mb-4 mb-sm-0">
+              <a href="/" class="header__logo">
+                <img src="f/img/logo.png" alt="">
+              </a>
+            </div>
+            <div class="col-12 col-sm-auto text-center">
+              <div class="citypick">
+                <span class="icon-marker mr-1"></span>
+                <span>Ваш город:</span>
+                <a href="#" data-toggle="modal" data-target="#city-modal">Москва</a>
+                <!--<select class="selectpicker" title="Москва">
+                  <option>Москва2</option>
+                  <option>Москва3</option>
+                </select>-->
+              </div>
+              <div class="header__search">
+                <a href="#" class="search-trigger"><span class="icon-lens"></span></a>
+                <form action="">
+                  <input type="text" placeholder="Поиск">
+                </form>
+              </div>
+              <a href="#" class="phone btn"><span class="icon-phone mr-2 mb-1"></span>8 800 500 1616</a>
+            </div>
+          </div>
+        </div>
+        <div class="header__main">
+          <div class="row justify-content-between align-items-center">
+            <div class="col-auto header__main-line">
+              <!--<div class="header__main-line"></div>-->
+            </div>
+            <div class="col">
+              <a href="#sidr" id="ham-menu" class="ham-trigger">&nbsp;</a>
+              <nav class="main-menu">
+                <ul class="row justify-content-between">
+                  <li class="col-auto"><a href="#">Частным клиентам</a></li>
+                  <li class="col-auto main-menu__sub">
+                    <a href="#">Корпоративным клиентам</a>
+                    <ul class="row no-gutters justify-content-between">
+                      <li class="col-auto"><a href="##"><b>Транспорт</b><span class="icon-arrow-right ml-2"></span></a></li>
+                      <li class="col-auto"><a href="##"><b>Имущество</b><span class="icon-arrow-right ml-2"></span></a></li>
+                      <li class="col-auto"><a href="##"><b>Ответственность</b><span class="icon-arrow-right ml-2"></span></a></li>
+                      <li class="col-auto"><a href="##"><b>Отраслевое страхование</b><span class="icon-arrow-right ml-2"></span></a></li>
+                      <li class="col-auto"><a href="##"><b>Здоровье</b><span class="icon-arrow-right ml-2"></span></a></li>
+                    </ul>
+                  </li>
+                  <li class="col-auto"><a href="#">О компании</a></li>
+                  <li class="col-auto"><a href="#">Контакты</a></li>
+                  <li class="col-auto"><a href="#">Онлайн сервисы НАСКО</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="col-auto">
+              <a href="#" class="account">
+                <div class="row align-items-center no-gutters">
+                  <div class="col-auto">
+                    <div class="account__ico">
+                      <span class="icon-account"></span>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="account__text">Личный кабинет</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main role="main" class="content">
+      <div class="preface" style="background-image: url('f/img/preface/2.jpg')">
+        <div class="container h-100">
+          <div class="row h-100 align-items-end">
+            <div class="col-12">
+              <ul class="breadcrumbs">
+                <li><a href="/">Главная</a>
+                </li><li><span>О компании</span></li>
+              </ul>
+              <h1>О компании</h1>
+              <hr>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="about mb-5">
+          <div class="row no-gutters">
+            <div class="col-lg-4 pr-lg-3 mb-4 mb-lg-0">
+              <ul class="about__menu">
+                <li class="current">
+                  <a href="##">Общие сведения о компании</a>
+                  <ul>
+                    <li class="current"><a href="##">Общая информация</a></li>
+                    <li><a href="##">Миссия и цели</a></li>
+                    <li><a href="##">Структура управления</a></li>
+                  </ul>
+                </li>
+                <li><a href="##">Руководство</a></li>
+                <li><a href="##">Акционеры</a></li>
+                <li><a href="##">Участие в общественных ассоциациях и объединениях</a></li>
+                <li><a href="##">Перечень осуществляемых видов страхования</a></li>
+                <li><a href="##">Правила страхования и стаховые тарифы</a></li>
+                <li><a href="##">История</a></li>
+                <li><a href="##">Раскрытие информиации</a></li>
+                <li><a href="##">Рейтинги, дипломы, награды</a></li>
+                <li><a href="##">Реестр страховых посредников</a></li>
+                <li><a href="##">Сведения об утраченных БСО</a></li>
+                <li><a href="##">Партнеры</a></li>
+                <li><a href="##">Вакансии</a></li>
+                <li><a href="##">Пресс-центр</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-8 pl-lg-4">
+              <div class="row mb-3">
+                <div class="col-auto mb-3">
+                  <img src="f/img/face.jpg" width="181" alt="">
+                </div>
+                <div class="col">
+                  <p>Сегодня страхование - это реальный механизм помощи пострадавшим от несчастных случаев, от стихийных бедствий, аварий, краж и прочих ситуаций, ведущих к непредвиденным денежным затратам.</p>
+                  <p>Главное - не ошибиться с выбором страховой компании.</p>
+                  <p>Какой она должна быть?</p>
+                  <ul class="pl-3">
+                    <li>Надежной и солидной.</li>
+                    <li>Удобной для своих клиентов.</li>
+                    <li>Должна выполнять свои обязательства. </li>
+                  </ul>
+                </div>
+              </div>
+              <p>Наша страховая Компания отвечает всем этим требованиям.</p>
+              <p>НАСКО успешно работает на рынке страховых услуг с 1996 года. Сегодня НАСКО – серьезный бренд, получивший признание и уважение, внушающий доверие.</p>
+              <p>У страховой компании «НАСКО» крупный уставный капитал – 900 миллионов рублей.</p>
+              <p>НАСКО последовательно укрепляет маркетинговые позиции, и, выполняя свою миссию, добилась значительных конкурентных преимуществ. Это – высокоразвитая филиальная сеть с оптимальной системой управления, эффективный сервис и персональный подход.</p>
+              <p>Наша задача - сделать страхование для населения максимально понятным, надежным, доступным и легким на всех этапах, а получение страхового возмещения – простым и квалифицированным.</p>
+              <p>В настоящее время у АО «НАСКО» хороший потенциал и значительные кадровые ресурсы. Компания имеет высокий кредит доверия партнеров и клиентов, динамично развивается.</p>
+              <p class="mb-4">Полное наименование – Акционерное общество «Национальная страховая Компания ТАТАРСТАН».</p>
+              <p class="mb-4">Сокращенное название – АО «НАСКО».</p>
+              <p class="mb-4">Генеральный директор Компании: Кабаков Эдуард Феликсович.</p>
+              <p>Дата основания – 15 ноября 1996 года.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="feedback">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-3">
+              <h2 class="feedback__title">Обратная связь</h2>
+              <hr>
+            </div>
+            <div class="col mb-5 mb-md-0">
+              <div class="feedback__caption">
+                Страховая компания «НАСКО» делает все возможное, чтобы процессы приобретения страховых полисов и качество обслуживания страхователей при урегулировании убытков были максимально легким и удобными для наших клиентов.
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-lg-6 mb-5 mb-lg-0">
+              <form action="">
+                <div class="picker picker_orange mb-3">
+                  <select class="selectpicker" title="Вопрос по электронному ОСАГО">
+                    <option>Вопрос по электронному ОСАГО</option>
+                    <option>Вопрос по электронному ОСАГО</option>
+                  </select>
+                </div>
+                <input type="text" class="form-control form-control_light mb-3" placeholder="Ваше ФИО*">
+                <div class="row mb-3">
+                  <div class="col-12 col-sm-6">
+                    <input type="text" class="form-control form-control_light" placeholder="Ваш e-mail">
+                  </div>
+                  <div class="col-12 col-sm-6 phone-pick phone-pick_light">
+                    <input type="tel" required class="form-control form-control_light" placeholder="(___) ___-__-__">
+                  </div>
+                </div>
+                <textarea class="form-control form-control_light mb-3" placeholder="Ваш вопрос*"></textarea>
+                <div class="form-text mb-4">*Поля обязательны для заполнения</div>
+                <div class="row justify-content-between align-items-center">
+                  <div class="col mb-4 mb-sm-0">
+                    <div class="custom-checkbox">
+                      <input type="checkbox" id="push" class="custom-control-input">
+                      <label for="push" class="custom-control-label">Согласен на обработку персональных данных</label>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-auto">
+                    <button class="btn">Отправить<span class="ml-2 icon-arrow-right"></span></button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="faq">
+                <div class="faq__title">Часто задаваемые вопросы</div>
+                <ul>
+                  <li><a href="#">Действия при страховом случае - Если вы виновник ДТП?</a></li>
+                  <li><a href="#">Что делать при наступлении страхового события по страхованию недвижимости?</a></li>
+                  <li><a href="#">Что делать при наступлении страхового события по страхованию здоровья?</a></li>
+                  <li><a href="#">Действия при страховом случае - Если вы виновник ДТП?</a></li>
+                  <li><a href="#">Что делать при наступлении страхового события по страхованию недвижимости?</a></li>
+                </ul>
+                <a href="#" class="faq__all"><span>Все вопросы</span><span class="icon-arrow-white ml-2"></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__main">
+          <div class="row justify-content-center justify-content-md-between align-items-center mb-4">
+            <div class="col-md col-12 mb-3 mb-md-0">
+              <ul class="footer__menu row justify-content-center justify-content-md-start">
+                <li class="col-auto"><a href="#">Частным клиентам</a></li>
+                <li class="col-auto"><a href="#">Корпоративным клиентам </a></li>
+                <li class="col-auto"><a href="#">О компании </a></li>
+                <li class="col-auto"><a href="#">Контакты </a></li>
+                <li class="col-auto"><a href="#">Онлайн сервисы НАСКО</a></li>
+              </ul>
+            </div>
+            <div class="col-auto">
+              <a href="#" class="phone"><span class="icon-phone mr-2 mb-1"></span>8 800 500 1616</a>
+            </div>
+          </div>
+          <div class="row justify-content-between align-items-center">
+            <div class="col order-2 order-sm-1">
+              <div class="footer__rights">
+                Регистрационный номер 3116 в ЕГР ССД. <br>
+                © 2018 АО «НАСКО».  Все права защищены.
+              </div>
+            </div>
+            <div class="col-12 col-sm-auto order-1 order-sm-2">
+              <ul class="socials row no-gutters justify-content-sm-start justify-content-center">
+                <li class="socials__item socials__item_vk col-auto"><a href="#"><span class="icon-vk"></span></a></li>
+                <li class="socials__item socials__item_wa col-auto"><a href="#"><span class="icon-watsapp"></span></a></li>
+                <li class="socials__item socials__item_soc3 col-auto"><a href="#"><span class="icon-soc3"></span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer__madeby">
+          Разработано в <a href="#">МЕТРАФОР</a>
+        </div>
+      </div>
+    </footer>
+    <div class="modal fade city-modal" id="city-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h5>Ваш город</h5>
+          </div>
+          <div class="modal-body">
+            <div class="row city-modal__items mb-4">
+              <div class="col-4">
+                <a href="##">Москва</a>
+              </div>
+              <div class="col-4">
+                <a href="##">Санкт-Петербург</a>
+              </div>
+              <div class="col-4">
+                <a href="##">Казань</a>
+              </div>
+            </div>
+            <div class="city-modal__abc row justify-content-between no-gutters mb-3">
+              <div class="col-md-6">
+                <div class="row justify-content-between no-gutters">
+                  <a class="col-auto mb-3" href="##">А</a>
+                  <a class="col-auto mb-3" href="##">Б</a>
+                  <a class="col-auto mb-3" href="##">В</a>
+                  <a class="col-auto mb-3" href="##">Г</a>
+                  <a class="col-auto mb-3" href="##">Д</a>
+                  <a class="col-auto mb-3" href="##">Е</a>
+                  <a class="col-auto mb-3" href="##">Ж</a>
+                  <a class="col-auto mb-3" href="##">З</a>
+                  <a class="col-auto mb-3" href="##">И</a>
+                  <a class="col-auto mb-3" href="##">Й</a>
+                  <a class="col-auto mb-3" href="##">К</a>
+                  <a class="col-auto mb-3" href="##">Л</a>
+                  <a class="col-auto mb-3" href="##">М</a>&nbsp;
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="row justify-content-between no-gutters">
+                  <a class="col-auto mb-3" href="##">Н</a>
+                  <a class="col-auto mb-3" href="##">О</a>
+                  <a class="col-auto mb-3" href="##">П</a>
+                  <a class="col-auto mb-3" href="##">Р</a>
+                  <a class="col-auto mb-3" href="##">С</a>
+                  <a class="col-auto mb-3" href="##">Т</a>
+                  <a class="col-auto mb-3" href="##">У</a>
+                  <a class="col-auto mb-3" href="##">Ф</a>
+                  <a class="col-auto mb-3" href="##">Х</a>
+                  <a class="col-auto mb-3" href="##">Ч</a>
+                  <a class="col-auto mb-3" href="##">Ш</a>
+                  <a class="col-auto mb-3" href="##">Щ</a>
+                  <a class="col-auto mb-3" href="##">Э</a>
+                  <a class="col-auto mb-3" href="##">Я</a>
+                </div>
+              </div>
+            </div>
+            <div class="row city-modal__items mb-4">
+              <div class="col-sm-6 col-md-4 text-center text-sm-left">
+                <div class="mb-2"><a href="##">Агрыз</a></div>
+                <div class="mb-2"><a href="##">Азнакаево</a></div>
+                <div class="mb-2"><a href="##">Аксубаево</a></div>
+              </div>
+              <div class="col-sm-6 col-md-4 text-center text-sm-left">
+                <div class="mb-2"><a href="##">Актаныш</a></div>
+                <div class="mb-2"><a href="##">Алексеевское</a></div>
+                <div class="mb-2"><a href="##">Альметьевск</a></div>
+              </div>
+              <div class="col-md-4 text-center text-sm-left">
+                <div class="mb-2"><a href="##">Апастово</a></div>
+                <div class="mb-2"><a href="##">Арск</a></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-auto mr-auto mr-sm-0 ml-auto">
+                <a href="##" class="btn btn-dark">Выбрать город</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="f/js/jquery-3.3.1.min.js"></script>
+  <script src="f/js/bootstrap.bundle.min.js"></script>
+  <script src="f/js/bootstrap-select.min.js"></script>
+  <script src="f/slick/slick.min.js"></script>
+  <script src="f/js/jquery.maskedinput.min.js"></script>
+  <script src="f/js/jquery.sidr.min.js"></script>
+  <script src="f/js/jquery.scrollTo.min.js"></script>
+  <script src="f/js/speedometer.js"></script>
+  <script src="f/js/jquery.spincrement.min.js"></script>
+  <script src="f/js/datepicker.min.js"></script>
+  <script src="f/js/ion.rangeSlider.min.js"></script>
+  <script src="f/js/main.js"></script>
+  <script>
+    $(document).ready(function(){
+      $(".about__menu > li > a").click(function(){
+        $(".about__menu > li").removeClass("current");
+        $(this).closest("li").addClass("current");
+      })
+    });
+  </script>
+</body>
+</html>

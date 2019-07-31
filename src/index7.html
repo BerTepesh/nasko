@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+//= template/head.html
+<body>
+  //= template/ham-menu.html
+  //= template/side-control.html
+  <div class="wrap">
+    <header class="header">
+      //= template/header.html
+    </header>
+    <main role="main" class="content">
+      <div class="preface" style="background-image: url('f/img/preface/5.jpg')">
+        <div class="container h-100">
+          <div class="row h-100 align-items-end">
+            <div class="col-12">
+              <ul class="breadcrumbs">
+                <li><a href="/">Главная</a>
+                </li><li><span>Активация полиса</span>
+                </li>
+              </ul>
+              <h1>Активация полиса</h1>
+              <hr>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container pt-4">
+        <div class="pb-5">
+          <div class="bordered mb-5">
+            <h2 class="text-left mb-4">Данные для активации полиса</h2>
+            <div class="activate">
+              <h3 class="mb-3">Активация обязательна в течение 7 дней с даты оплаты Полиса в случае:</h3>
+              <ul class="list-styled list-styled_blue">
+                <li>получения полиса в подарок</li>
+                <li>страхования квартиры или дома, в которых Вы не зарегистрированы.</li>
+              </ul>
+              <p class="mb-4">
+                Для Активации Вашего Полиса, пожалуйста, приготовьте Ваши паспортные данные. <br>
+                Активация займет не более 5 минут. <br>
+                Активация не требуется, если Вы уже активировали свой полис по телефону.
+              </p>
+              <div class="warning mb-4">
+                поле для вывода ошибок при заполнении формы
+              </div>
+              <div class="row mb-4">
+                <div class="col-md-6 mb-4 mb-md-0">
+                  <div class="row">
+                    <div class="col-xl-6">
+                      <b class="d-inline-block mb-3">Номер полиса</b>
+                      <input type="text" class="form-control mb-2" placeholder="Введите номер">
+                    </div>
+                  </div>
+                  <div class="fs-14">введите номер Полиса, напечатанный на бланке</div>
+                </div>
+                <div class="col-md-6">
+                  <div class="row">
+                    <div class="col-xl-6">
+                      <b class="d-inline-block mb-3">Код активации</b>
+                      <input type="text" class="form-control mb-2" placeholder="Введите код">
+                    </div>
+                  </div>
+                  <div class="fs-14">введите код активации, указанный внутри конверта</div>
+                </div>
+              </div>
+              <div class="row justify-content-center justify-content-md-end">
+                <div class="col-auto">
+                  <a href="#" class="btn btn-dark">Подтвердить</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bordered mb-5">
+          <h2 class="text-left">Полезная информация</h2>
+          <hr>
+          <div class="row justify-content-between">
+            <div class="col-12 col-lg-auto mb-2">
+              <a href="#" class="fs-18 text-dark">
+                <div class="row no-gutters">
+                  <div class="col-auto">
+                    <span class="icon-word mr-3"></span>
+                  </div>
+                  <div class="col">
+                    Страховые тарифы #1
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-12 col-lg-auto mb-2">
+              <a href="#" class="fs-18 text-dark">
+                <div class="row no-gutters">
+                  <div class="col-auto">
+                    <span class="icon-word mr-3"></span>
+                  </div>
+                  <div class="col">
+                    Страховые тарифы #2
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-12 col-lg-auto mb-2">
+              <a href="#" class="fs-18 text-dark">
+                <div class="row no-gutters">
+                  <div class="col-auto">
+                    <span class="icon-word mr-3"></span>
+                  </div>
+                  <div class="col">
+                    Страховые тарифы #3
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      //= template/statistic.html
+      //= template/feedback.html
+    </main>
+    //= template/footer.html
+    <div class="modal fade" id="pay" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body text-center px-5">
+            <div class="fs-18 mb-4">Хотите оплатить полис сразу или
+            же получить расчет на E-mail?</div>
+            <div class="pt-3">
+              <a href="#" class="pseudo text-dark fs-14"><b>Отправить рассчет на E-mail</b></a>
+            </div>
+          </div>
+          <div class="modal-footer justify-content-center">
+            <button type="button" class="btn btn-dark">Оплатить полис</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  //= template/scripts.html
+  <script>
+    $(document).ready(function(){
+      $("#range").ionRangeSlider({
+        min: 30000,
+        max: 100000,
+        from: 45000
+      });
+    });
+    $(window).on("load resize", function(){
+
+    });
+  </script>
+</body>
+</html>

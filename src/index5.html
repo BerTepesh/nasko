@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html>
+//= template/head.html
+<body>
+  //= template/ham-menu.html
+  //= template/side-control.html
+  <div class="wrap">
+    <header class="header">
+      //= template/header.html
+    </header>
+    <main role="main" class="content">
+      <div class="preface" style="background-image: url('f/img/preface/5.jpg')">
+        <div class="container h-100">
+          <div class="row h-100 align-items-end">
+            <div class="col-12">
+              <ul class="breadcrumbs">
+                <li><a href="/">Главная</a>
+                </li><li><a href="#">Частным клиентам</a>
+                </li><li><span>ВЗР</span>
+                </li>
+              </ul>
+              <h1>Выезжающим за границу</h1>
+              <hr>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="bordered mb-5">
+          <h2 class="text-left mb-5">Расчет (покупка)</h2>
+          <div class="row mb-4">
+            <div class="col-lg-6 pr-xl-5">
+              <div class="picker mb-5">
+                <select class="selectpicker" title="Страна">
+                  <option>Россия</option>
+                  <option>Россия</option>
+                </select>
+              </div>
+              <div class="row justify-content-between align-items-center">
+                <div class="col-auto mb-3 mb-md-5 mb-lg-3 mb-xl-5">
+                  <b>Тип полиса</b>
+                </div>
+                <div class="col-sm-auto mb-5">
+                  <div class="custom-radio-list row no-gutters">
+                    <div class="custom-control custom-radio col-12 col-sm-auto">
+                      <input type="radio" id="type1" name="type" class="custom-control-input" checked>
+                      <label for="type1" class="custom-control-label w-100 w-sm-auto px-3 fs-18">Однократный</label>
+                    </div><div class="custom-control custom-radio col-sm-auto">
+                    <input type="radio" id="type2" name="type" class="custom-control-input">
+                    <label for="type2" class="w-100 w-sm-auto custom-control-label px-3 fs-18">Многократный</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-between mb-5 mb-lg-0">
+                <div class="col-sm-auto mb-2">
+                  <div class="row align-items-center date no-gutters">
+                    <div class="col-sm-auto">
+                      <b class="date__label">c</b>
+                    </div>
+                    <div class="col-sm-auto">
+                      <div class="date-picker">
+                        <input type='text' placeholder="01/01/2018" class="datepicker-here form-control py-0"  />
+                        <div class="date-picker__ico"><span class="icon-date"></span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-auto mb-2">
+                  <div class="row align-items-center date no-gutters">
+                    <div class="col-sm-auto">
+                      <b class="date__label">по</b>
+                    </div>
+                    <div class="col-sm-auto">
+                      <div class="date-picker">
+                        <input type='text' placeholder="01/01/2018" class="datepicker-here form-control py-0"  />
+                        <div class="date-picker__ico"><span class="icon-date"></span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 pl-xl-5">
+              <div class="row align-items-center mb-5">
+                <div class="col-sm-auto mb-3 mb-sm-0">
+                  <b>Валюта договора</b>
+                </div>
+                <div class="col-auto">
+                  <div class="custom-radio-list">
+                    <div class="custom-control custom-radio">
+                      <input type="radio" id="cur1" name="cur" class="custom-control-input" checked>
+                      <label for="cur1" class="custom-control-label fs-18"><b class="rub">&#8381;</b></label>
+                    </div><div class="custom-control custom-radio">
+                    <input type="radio" id="cur2" name="cur" class="custom-control-input">
+                    <label for="cur2" class="custom-control-label fs-18">&euro;</label>
+                    </div><div class="custom-control custom-radio">
+                    <input type="radio" id="cur3" name="cur" class="custom-control-input">
+                    <label for="cur3" class="custom-control-label fs-18">$</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-3 mb-md-2 mb-xl-4 py-xl-2"><b class="mb-2 d-inline-block pb-1">Страховая сумма</b></div>
+              <input id="range"/>
+            </div>
+          </div>
+          <a href="#" class="d-inline-block mb-4"><span class="plus mr-2"></span><b class="pseudo text-dark fs-14">Добавить попутчика</b></a>
+          <div class="row align-items-center justify-content-between">
+            <div class="col-sm mb-3 mb-sm-0 fs-14">
+              Чтобы рассчитать полис, необходимо заполнить все поля и значения
+            </div>
+            <div class="col-auto">
+              <a href="#" class="btn btn-dark">Расчитать<span class="ml-2 icon-arrow-right"></span></a>
+            </div>
+          </div>
+        </div>
+        <div class="bordered mb-5">
+          <h2 class="text-left mb-5">Расчет (покупка)</h2>
+          <div class="tarifs">
+            <div class="row">
+              <div class="col-lg-4">
+                <a href="#" class="tarifs__item">
+                  <div class="tarifs__title">Эконом</div>
+                  <div class="tarifs__price">485<span class="rub">&#8381;</span></div>
+                  <ul class="list-styled">
+                    <li>Медикаменты, выписанные врачом</li>
+                    <li>Перевязочные материалы и вспомогательные средства</li>
+                    <li>Стоматологическое лечение, обусловленное острой зубной болью или травмами</li>
+                  </ul>
+                </a>
+              </div>
+              <div class="col-lg-4">
+                <a href="#" class="tarifs__item">
+                  <div class="tarifs__title">Эконом</div>
+                  <div class="tarifs__price">925<span class="rub">&#8381;</span></div>
+                  <ul class="list-styled">
+                    <li>Медикаменты, выписанные врачом</li>
+                    <li>Перевязочные материалы и вспомогательные средства</li>
+                    <li>Стоматологическое лечение, обусловленное острой зубной болью или травмами</li>
+                    <li>Перевязочные материалы и вспомогательные средства</li>
+                  </ul>
+                </a>
+              </div>
+              <div class="col-lg-4">
+                <a href="#" class="tarifs__item">
+                  <div class="tarifs__title">Эконом</div>
+                  <div class="tarifs__price">1650<span class="rub">&#8381;</span></div>
+                  <ul class="list-styled">
+                    <li>Медикаменты, выписанные врачом</li>
+                    <li>Перевязочные материалы и вспомогательные средства</li>
+                    <li>Стоматологическое лечение, обусловленное острой зубной болью или травмами</li>
+                    <li>Медикаменты, выписанные врачом</li>
+                    <li>Перевязочные материалы и вспомогательные средства</li>
+                  </ul>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bordered mb-5">
+          <h2 class="text-left mb-5">Расчет (покупка)</h2>
+          <div class="mb-3"><b>Дополнительные опции</b></div>
+          <div class="row">
+            <div class="col-lg-6 pr-xl-5">
+              <div class="picker mb-5">
+                <select class="selectpicker" title="Вид спорта">
+                  <option>1</option>
+                  <option>2</option>
+                </select>
+              </div>
+              <div class="picker mb-5">
+                <select class="selectpicker" multiple="multiple" title="Профессия">
+                  <option>Программист</option>
+                  <option>Инженер по телекоммуникационному оборудованию</option>
+                  <option>Электрик</option>
+                  <option>Технолог химической промышленности</option>
+                  <option>Бухгалтер</option>
+                </select>
+              </div>
+              <div class="picker mb-5">
+                <select class="selectpicker" title="Багаж">
+                  <option>1</option>
+                  <option>2</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-lg-6 pl-xl-5">
+              <div class="picker mb-5">
+                <select class="selectpicker" title="Отмена рейса">
+                  <option>1</option>
+                  <option>2</option>
+                </select>
+              </div>
+              <div class="picker mb-5">
+                <select class="selectpicker" title="Гражданская ответственность">
+                  <option>1</option>
+                  <option>2</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="issue">
+            <div class="row align-items-center justify-content-between">
+              <div class="col-md-auto mb-3 mb-md-0">
+                <div class="issue__price">
+                  <b>Итоговая сумма</b>
+                  16 990 <span class="rub">&#8381;</span>
+                </div>
+              </div>
+              <div class="col-md-auto">
+                <a href="#" class="btn btn-light btn-lg">Оформить <span>полис</span><span class="ml-2 icon-arrow-right"></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bordered mb-5">
+          <h2 class="text-left mb-5">Расчет (покупка)</h2>
+          <div class="mb-4 fs-18"><b>Застрахованные</b></div>
+          <div class="row mb-3">
+            <div class="col-lg-6 pr-xl-5 mb-3">
+              <div class="row">
+                <div class="col-12 mb-3">
+                  <b>Имя и фамилия</b>
+                </div>
+                <div class="col-sm-6 pr-xl-5">
+                  <input type="text" class="form-control mb-3" placeholder="Имя (латиницей)">
+                </div>
+                <div class="col-sm-6 pl-xl-5">
+                  <input type="text" class="form-control mb-3" placeholder="Фамилия (латиницей)">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 pl-xl-5 mb-3">
+              <div class="row mb-3 mb-lg-0">
+                <div class="col-sm-6 pr-xl-5 mb-4 mb-sm-0">
+                  <b class="d-inline-block mb-3">Дата рождения</b>
+                  <div class="date-picker date-picker_full">
+                    <input type='text' placeholder="01/01/2018" class="datepicker-here form-control py-0"  />
+                    <div class="date-picker__ico"><span class="icon-date"></span></div>
+                  </div>
+                </div>
+                <div class="col-sm-6 pl-xl-5">
+                  <b class="d-inline-block mb-3">Пол</b>
+                  <div class="custom-radio-list row no-gutters">
+                    <div class="custom-control custom-radio col-auto">
+                      <input type="radio" id="sx1" name="sx" class="custom-control-input" checked>
+                      <label for="sx1" class="custom-control-label">М</label>
+                    </div>
+                    <div class="custom-control custom-radio col-auto">
+                      <input type="radio" id="sx2" name="sx" class="custom-control-input">
+                      <label for="sx2" class="custom-control-label">Ж</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <a href="#" class="d-inline-block mb-4"><span class="plus mr-2"></span><b class="pseudo text-dark fs-14">Добавить попутчика</b></a>
+            </div>
+          </div>
+          <div class="mb-4 fs-18"><b>Страхователь</b></div>
+          <div class="row mb-3">
+            <div class="col-lg-6 pr-xl-5 mb-3">
+              <div class="row">
+                <div class="col-12 mb-3">
+                  <b>Имя и фамилия</b>
+                </div>
+                <div class="col-sm-6 pr-xl-5">
+                  <input type="text" class="form-control mb-3" placeholder="Имя (латиницей)">
+                </div>
+                <div class="col-sm-6 pl-xl-5">
+                  <input type="text" class="form-control mb-3" placeholder="Фамилия (латиницей)">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 pl-xl-5 mb-3">
+              <div class="row">
+                <div class="col-sm-6 pr-xl-5 mb-4 mb-sm-0">
+                  <b class="d-inline-block mb-3">Дата рождения</b>
+                  <div class="date-picker date-picker_full">
+                    <input type='text' placeholder="01/01/2018" class="datepicker-here form-control py-0"  />
+                    <div class="date-picker__ico"><span class="icon-date"></span></div>
+                  </div>
+                </div>
+                <div class="col-sm-6 pl-xl-5">
+                  <b class="d-inline-block mb-3">Пол</b>
+                  <div class="custom-radio-list row no-gutters">
+                    <div class="custom-control custom-radio col-auto">
+                      <input type="radio" id="sx3" name="sx2" class="custom-control-input" checked>
+                      <label for="sx3" class="custom-control-label">М</label>
+                      </div>
+                      <div class="custom-control custom-radio col-auto">
+                      <input type="radio" id="sx4" name="sx2" class="custom-control-input">
+                      <label for="sx4" class="custom-control-label">Ж</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col-md-6 pr-xl-5 mb-3">
+              <b class="d-inline-block mb-3">Адрес регистрации</b>
+              <input type="text" class="form-control mb-3" placeholder="Страна, город, улица, дом ...">
+            </div>
+            <div class="col-md-6 pl-xl-5 mb-3">
+              <div class="row">
+                <div class="col-lg-6 pr-xl-5">
+                  <b class="d-inline-block mb-3">Телефон</b>
+                  <div class="phone-pick">
+                    <input type="tel" required class="form-control" placeholder="(___) ___-__-__">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row align-items-center justify-content-between">
+            <div class="col-sm mb-3 mb-sm-0 fs-14">
+              Чтобы отправить, необходимо заполнить все поля и значения
+            </div>
+            <div class="col-auto">
+              <a href="#" class="btn btn-dark" data-toggle="modal" data-target="#pay">Отправить<span class="ml-2 icon-arrow-right"></span></a>
+            </div>
+          </div>
+        </div>
+        <div class="bordered mb-5">
+          <h2 class="text-left mb-5">Расчет (покупка)</h2>
+          <div class="login">
+            <div class="mb-3">Чтобы продолжить нужно
+              авторизоваться</div>
+            <input type="text" class="form-control mb-3" placeholder="Логин">
+            <input type="text" class="form-control mb-5" placeholder="Пароль">
+            <div class="row align-items-center justify-content-center justify-content-sm-between">
+              <div class="col-sm-auto order-2 order-sm-1 text-center">
+                <a href="#"><b class="pseudo text-dark fs-14">Забыли пароль?</b></a>
+              </div>
+              <div class="col-auto order-1 order-sm-2 mb-3 mb-sm-0">
+                <button class="btn btn-dark">Войти</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="mb-5">
+          Представьте такую ситуацию: вы решили отдохнуть за границей. <b>Задумывались ли вы, в предвкушении долгожданного отдыха, о неприятностях, которые могут подстерегать путешественника?</b> Острая зубная боль, внезапные заболевания, ушибы, травмы. Согласитесь, если и задумывались, то в самую последнюю очередь. Больше волнуют приготовления к отъезду, покупка защитных очков от солнца, предвкушение новых впечатлений. И так хочется <b>отдохнуть спокойно, весело, беззаботно</b>. Что ж, желание вполне выполнимое, если, отправляясь в далекие страны, вы всерьез подумали о страховке.
+        </p>
+        <div class="advantages mb-5">
+          <h3>Преимущества приобретения страхового полиса</h3>
+          <div class="row">
+            <div class="col-md-6">
+              <ul class="pl-0">
+                <li class="row no-gutters mb-3">
+                  <div class="col-auto mr-2">
+                    <span class="icon-star"></span>
+                  </div>
+                  <div class="col pt-1">
+                    Отсутствие франшизы - АО"НАСКО" оплачивает 100% расходов Застрахованного за границей
+                  </div>
+                </li>
+                <li class="row no-gutters mb-3">
+                  <div class="col-auto mr-2">
+                    <span class="icon-star"></span>
+                  </div>
+                  <div class="col pt-1">
+                    Обслуживание Застрахованных на всех континентах осуществляет Компания "Балт Ассистанс" входит в международную группу компаний Balt Assistance Ltd., гарантии которой принимаются медицинскими учреждениями в любой точке мира
+                  </div>
+                </li>
+                <li class="row no-gutters mb-3">
+                  <div class="col-auto mr-2">
+                    <span class="icon-star"></span>
+                  </div>
+                  <div class="col pt-1">
+                    Возмещаются расходы на стоматологическое лечение и лечение обострения хронического заболевания в случае возникновения угрозы для жизни Застрахованного
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <ul class="pl-0">
+                <li class="row no-gutters mb-3">
+                  <div class="col-auto mr-2">
+                    <span class="icon-star"></span>
+                  </div>
+                  <div class="col pt-1">
+                    Сервисный договор страхования, предусматривающий возмещение расходов во время пребывания за границей, а не компенсацию по прибытию в страну постоянного проживания
+                  </div>
+                </li>
+                <li class="row no-gutters mb-3">
+                  <div class="col-auto mr-2">
+                    <span class="icon-star"></span>
+                  </div>
+                  <div class="col pt-1">
+                    Полисы «НАСКО» признаются консульскими службами при оформлении визы
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="collapser">
+          <div class="collapser__btn collapsed" data-toggle="collapse" data-target="#col1" aria-expanded="false" aria-controls="col1">
+            <div class="row align-items-center">
+              <div class="col">
+                Объект страхования
+              </div>
+              <div class="col-auto">
+                <span class="collapser__plus"></span>
+              </div>
+            </div>
+          </div>
+          <div class="collapser__content collapse" id="col1">
+            <div class="collapser__holder">
+
+            </div>
+          </div>
+        </div>
+        <div class="collapser">
+          <div class="collapser__btn collapsed" data-toggle="collapse" data-target="#col2" aria-expanded="false" aria-controls="col2">
+            <div class="row align-items-center">
+              <div class="col">
+                Медицинские расходы
+              </div>
+              <div class="col-auto">
+                <span class="collapser__plus"></span>
+              </div>
+            </div>
+          </div>
+          <div class="collapser__content collapse" id="col2">
+            <div class="collapser__holder">
+              <ul class="list-styled list-styled_blue">
+                <li>Амбулаторное и стационарное лечение при наступлении несчастного случая или острого внезапного заболевания, либо обострения хронического заболевания, повлекшего угрозу для жизни Застрахованного</li>
+                <li>Диагностические исследования, потребовавшиеся для оказания медицинской помощи</li>
+                <li>Медикаменты, выписанные врачом</li>
+                <li>Перевязочные материалы и вспомогательные средства</li>
+                <li> Стоматологическое лечение, обусловленное острой зубной болью или травмами, полученными в результате несчастного случая</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="collapser mb-5">
+          <div class="collapser__btn collapsed" data-toggle="collapse" data-target="#col3" aria-expanded="false" aria-controls="col3">
+            <div class="row align-items-center">
+              <div class="col">
+                Транспортные расходы
+              </div>
+              <div class="col-auto">
+                <span class="collapser__plus"></span>
+              </div>
+            </div>
+          </div>
+          <div class="collapser__content collapse" id="col3">
+            <div class="collapser__holder">
+
+            </div>
+          </div>
+        </div>
+        <div class="bordered mb-5">
+          <h2 class="text-left">Полезная информация</h2>
+          <hr>
+          <div class="row justify-content-between">
+            <div class="col-12 col-lg-auto mb-2">
+              <a href="#" class="fs-18 text-dark">
+                <div class="row no-gutters">
+                  <div class="col-auto">
+                    <span class="icon-word mr-3"></span>
+                  </div>
+                  <div class="col">
+                    Страховые тарифы #1
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-12 col-lg-auto mb-2">
+              <a href="#" class="fs-18 text-dark">
+                <div class="row no-gutters">
+                  <div class="col-auto">
+                    <span class="icon-word mr-3"></span>
+                  </div>
+                  <div class="col">
+                    Страховые тарифы #2
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-12 col-lg-auto mb-2">
+              <a href="#" class="fs-18 text-dark">
+                <div class="row no-gutters">
+                  <div class="col-auto">
+                    <span class="icon-word mr-3"></span>
+                  </div>
+                  <div class="col">
+                    Страховые тарифы #3
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      //= template/statistic.html
+      //= template/feedback.html
+    </main>
+    //= template/footer.html
+    <div class="modal fade" id="pay" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body text-center px-5">
+            <div class="fs-18 mb-4">Хотите оплатить полис сразу или
+            же получить расчет на E-mail?</div>
+            <div class="pt-3">
+              <a href="#" class="pseudo text-dark fs-14"><b>Отправить рассчет на E-mail</b></a>
+            </div>
+          </div>
+          <div class="modal-footer justify-content-center">
+            <button type="button" class="btn btn-dark">Оплатить полис</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  //= template/scripts.html
+  <script>
+    $(document).ready(function(){
+      $("#range").ionRangeSlider({
+        min: 30000,
+        max: 100000,
+        from: 45000
+      });
+    });
+    $(window).on("load resize", function(){
+
+    });
+  </script>
+</body>
+</html>
