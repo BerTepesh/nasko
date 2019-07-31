@@ -721,7 +721,7 @@ textarea {
       height: 400px; } }
   .preface_slide {
     height: auto;
-    //padding-top: 0;
+    padding-top: 0;
     margin-bottom: 0; }
   .preface__item {
     height: 800px;
