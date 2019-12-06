@@ -724,7 +724,7 @@ textarea {
     padding-top: 0;
     margin-bottom: 0; }
   .preface__item {
-    height: 800px;
+    height: 800px !important;
     background-position: center center;
     background-size: cover; }
   .preface__content {
